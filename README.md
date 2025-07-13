@@ -13,13 +13,34 @@ Datasets are output as images along with corresponding JSON files. During the te
 * Two points are randomly selected as reference and target points, with the target placed in one of the four directions relative to the reference (`lower-left`, `lower-right`, `upper-left`, `upper-right`).
 * The resulting JSON records the `filename` for each image, two prompt templates (`symbolic viewpoint` and `image viewpoint`), and the `correct answer` (multiple-choice).
 * The function `gen_reldataset()` returns paths for `storing data path` and `JSON path`, with options to customize `dataset size` and `random seed`.
+  As shown in the following example
+
+
+```python
+{
+    "img_name": "000.png",
+    "sybVp_promptTem": "\n    The figure represents a map with multiple objects. Each object is associated with a name as shown in the figure. Please answer the following multiple-choice question based on the provided information. In which direction is object G relative to object C? Available options:\n    A. LowerLeft\n    B. LowerRight\n    C. UpperLeft\n    D. UpperRight.\n    ",
+    "imgVp_promptTem": "\n    The figure represents a map with multiple objects. Each object is associated with a name as shown in the figure. Please answer the following multiple-choice question based on the provided information. In which direction is gray object relative to brown object? Available options:\n    A. LowerLeft\n    B. LowerRight\n    C. UpperLeft\n    D. UpperRight.\n    ",
+    "ans": "B. LowerRight"
+}
+```
 
 ### Absolute Position Dataset (`ABSdatasetMaker.py`)
-
 * Each image randomly generates between 5 to 10 labeled points, each assigned a random `color`, `label`, and `shape`.
 * A target point is randomly selected and placed in one of the four quadrants (`upper-right`, `upper-left`, `lower-left`, `lower-right`).
 * The resulting JSON records the `filename` for each image, two prompt templates (`symbolic viewpoint` and `image viewpoint`), and the `correct answer` (multiple-choice).
 * The function `gen_absdataset()` returns paths for `storing data path` and `JSON path`, with options to customize `dataset size` and `random seed`.
+  As shown in the following example
+
+
+```python
+{
+    "img_name": "000.png",
+    "sybVp_promptTem": "\n    The figure represents a map with multiple objects. Each object is associated with a name as shown in the figure. Please answer the following multiple-choice question based on the provided information. Which direction is object D located in the image? Available options:\n    A. UpperRight\n    B. UpperLeft\n    C. LowerLeft\n    D. LowerRight.\n    ",
+    "imgVp_promptTem": "\n    The figure represents a map with multiple objects. Each object is associated with a name as shown in the figure. Please answer the following multiple-choice question based on the provided information. Which direction is olive object located in the image? Available options:\n    A. UpperRight\n    B. UpperLeft\n    C. LowerLeft\n    D. LowerRight.\n    ",
+    "ans": "D. LowerRight"
+}
+```
 
 ### Prompt Templates and Viewpoints
 * **sybVp (symbolic viewpoint)**: Describes points by labels, e.g., "object A".
