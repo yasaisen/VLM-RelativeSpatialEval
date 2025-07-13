@@ -1,3 +1,13 @@
+"""
+ SPDX-License-Identifier: MIT
+ Copyright (c) 2025, yasaisen (clover)
+ 
+ This file is part of a project licensed under the MIT License.
+ See the LICENSE file in the project root for more information.
+ 
+ last modified in 2507131536
+"""
+
 import random
 import matplotlib.pyplot as plt
 import numpy as np

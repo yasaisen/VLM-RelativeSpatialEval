@@ -1,3 +1,13 @@
+"""
+ SPDX-License-Identifier: MIT
+ Copyright (c) 2025, yasaisen (clover)
+ 
+ This file is part of a project licensed under the MIT License.
+ See the LICENSE file in the project root for more information.
+ 
+ last modified in 2507131536
+"""
+
 import os
 import openai
 import base64
@@ -90,11 +100,15 @@ def run_test(
             acc_list += [0]
     print(f"\nacc: {sum(acc_list) / len(acc_list)}")
 
-    result_name = f"testResult_{nowtime}_{test_setting_name}"
-    save_list2json(
-        meta_list=test_result_list,
-        save_filename=os.path.join(os.getcwd(), result_name),
-    )
+    result_name = f"testResult_{nowtime}_{test_setting_name}""""
+ SPDX-License-Identifier: MIT
+ Copyright (c) 2025, yasaisen (clover)
+ 
+ This file is part of a project licensed under the MIT License.
+ See the LICENSE file in the project root for more information.
+ 
+ last modified in 2506130419
+"""
     print(result_name)
 
 def run_testingsets(
