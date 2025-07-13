@@ -36,7 +36,10 @@ def prompter(
 
     return prompt.replace(target_str, add_str + target_str)
 
-def run_vlm_inference(prompt, img_path):
+def run_vlm_inference(
+    prompt, 
+    img_path
+):
     with open(img_path, "rb") as image_file:
         base64_img = base64.b64encode(image_file.read()).decode("utf-8")
 
@@ -60,7 +63,7 @@ def run_vlm_inference(prompt, img_path):
 
     except Exception as e:
         print("Error during inference:", e)
-        return {"answer": "", "reasoning": ""}
+        return {"answer": ""}
 
 def run_test(
     test_setting_name: str,
@@ -100,15 +103,7 @@ def run_test(
             acc_list += [0]
     print(f"\nacc: {sum(acc_list) / len(acc_list)}")
 
-    result_name = f"testResult_{nowtime}_{test_setting_name}""""
- SPDX-License-Identifier: MIT
- Copyright (c) 2025, yasaisen (clover)
- 
- This file is part of a project licensed under the MIT License.
- See the LICENSE file in the project root for more information.
- 
- last modified in 2506130419
-"""
+    result_name = f"testResult_{nowtime}_{test_setting_name}"
     print(result_name)
 
 def run_testingsets(
@@ -126,8 +121,8 @@ def run_testingsets(
     print('\n...end run_testingsets\n')
 
 if __name__ == "__main__":
-    rel_path_dict = gen_reldataset(dataset_size=5)
-    abs_path_dict = gen_absdataset(dataset_size=5)
+    rel_path_dict = gen_reldataset() # dataset_size=5)
+    abs_path_dict = gen_absdataset() # dataset_size=5)
 
     setting_list = [
         {
