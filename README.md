@@ -69,14 +69,14 @@ This aims to guide the model to first determine the absolute positions of two po
 ## Test Results
 Tests were conducted using the `gpt-4.1-nano-2025-04-14` model, with 300 samples evaluated using `exact-match metrics`.
 
-| Configuration  | Test     | Viewpoint | Prompter | Result |
-| -------------- | -------- | --------- | -------- | ------ |
-| rel\_sybVp\_nP | Relative | Label     | X        | 79.66  |
-| rel\_imgVp\_nP | Relative | Color     | X        | 67.00  |
-| abs\_sybVp\_nP | Absolute | Label     | X        | 86.00  |
-| abs\_imgVp\_nP | Absolute | Color     | X        | 86.33  |
-| rel\_sybVp\_aP | Relative | Label     | V        | 83.00  |
-| rel\_imgVp\_aP | Relative | Color     | V        | 72.66  |
+| Configuration  | Test     | Viewpoint | Prompter | acc.(%) |
+| -------------- | -------- | --------- | -------- | ------- |
+| rel\_sybVp\_nP | Relative | Label     | X        | 79.66   |
+| rel\_imgVp\_nP | Relative | Color     | X        | 67.00   |
+| abs\_sybVp\_nP | Absolute | Label     | X        | 86.00   |
+| abs\_imgVp\_nP | Absolute | Color     | X        | 86.33   |
+| rel\_sybVp\_aP | Relative | Label     | V        | 83.00   |
+| rel\_imgVp\_aP | Relative | Color     | V        | 72.66   |
 
 The results indicate that providing prompts to guide the model in first determining absolute positions significantly assists in improving relative position judgments.
 
