@@ -13,7 +13,8 @@ Datasets are output as images along with corresponding JSON files. During the te
 * Two points are randomly selected as reference and target points, with the target placed in one of the four directions relative to the reference (`lower-left`, `lower-right`, `upper-left`, `upper-right`).
 * The resulting JSON records the `filename` for each image, two prompt templates (`symbolic viewpoint` and `image viewpoint`), and the `correct answer` (multiple-choice).
 * The function `gen_reldataset()` returns paths for `storing data path` and `JSON path`, with options to customize `dataset size` and `random seed`.
-  As shown in the following example
+
+As shown in the following example
 
 <div align="center">
   <img src="https://github.com/yasaisen/VLM-RelativeSpatialEval/blob/main/doc/rel_000.png" alt="inference" width="400">
@@ -33,7 +34,8 @@ Datasets are output as images along with corresponding JSON files. During the te
 * A target point is randomly selected and placed in one of the four quadrants (`upper-right`, `upper-left`, `lower-left`, `lower-right`).
 * The resulting JSON records the `filename` for each image, two prompt templates (`symbolic viewpoint` and `image viewpoint`), and the `correct answer` (multiple-choice).
 * The function `gen_absdataset()` returns paths for `storing data path` and `JSON path`, with options to customize `dataset size` and `random seed`.
-  As shown in the following example
+
+As shown in the following example
 
 <div align="center">
   <img src="https://github.com/yasaisen/VLM-RelativeSpatialEval/blob/main/doc/abs_000.png" alt="inference" width="400">
