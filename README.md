@@ -61,8 +61,8 @@ Datasets are output as images along with corresponding JSON files. During the te
    Additional configurations can be tested by modifying the `setting_list`.
 
 The additional prompt inserted is:
-```bash
-(tips: Please first determine the positions of the two objects on the map, and then identify their relative positions.)
+```python
+"(tips: Please first determine the positions of the two objects on the map, and then identify their relative positions.)"
 ```
 This aims to guide the model to first determine the absolute positions of two points and subsequently infer their relative positions based on those determinations.
 
