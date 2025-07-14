@@ -16,7 +16,7 @@ Datasets are output as images along with corresponding JSON files. During the te
   As shown in the following example
 
 <div align="center">
-  <img src="https://github.com/yasaisen/VLM-RelativeSpatialEval/blob/main/doc/rel_000.png" alt="inference" width="300">
+  <img src="https://github.com/yasaisen/VLM-RelativeSpatialEval/blob/main/doc/rel_000.png" alt="inference" width="400">
 </div>
 
 ```python
@@ -36,7 +36,7 @@ Datasets are output as images along with corresponding JSON files. During the te
   As shown in the following example
 
 <div align="center">
-  <img src="https://github.com/yasaisen/VLM-RelativeSpatialEval/blob/main/doc/abs_000.png" alt="inference" width="300">
+  <img src="https://github.com/yasaisen/VLM-RelativeSpatialEval/blob/main/doc/abs_000.png" alt="inference" width="400">
 </div>
 
 ```python
